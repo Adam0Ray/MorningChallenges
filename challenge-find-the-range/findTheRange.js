@@ -8,8 +8,8 @@
 // Write your solution below:
 
 let array=[28, 43, -12, 30, 4, 0, -36];
-let Max=console.log("Max is " + Math.max(...array));
-let Min=console.log("Min is " + Math.min(...array));
+console.log("Max is " + Math.max(...array));
+console.log("Min is " + Math.min(...array));
 
 //The ... extracts and spreads the properties aross all array
 
