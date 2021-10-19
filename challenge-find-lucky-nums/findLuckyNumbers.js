@@ -11,13 +11,13 @@
 
 // Write your code below this line.
 function generateLuckyNums(n){
-let nums = [1,2,3,4,5,6,7,8,9,10]
-let luckyNums = []
-for (let i = 0; i < n; i++ ){
-    let randomNum = Math.floor(Math.random() * nums.length);
-    luckyNums.push(nums[randomNum])
-    nums.splice(randomNum, 1)
+let nums = [1,2,3,4,5,6,7,8,9,10]  //numbers that will be looped through
+let luckyNums = []   //blank array
+for (let i = 0; i < n; i++ ){  //loops through
+    let x = Math.floor(Math.random() * nums.length); //generates a random number between >0 & 10
+    luckyNums.push(nums[x])  //pushes the value into the blank luckyNums array
+    nums.splice(x, 1)   //gets rid of repeat
 }
-return luckyNums
+return luckyNums  //returns the previously blank array LuckyNums that will now have values
 }
 console.log(generateLuckyNums(9))
