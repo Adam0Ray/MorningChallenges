@@ -14,9 +14,9 @@ function generateLuckyNums(n){
 let nums = [1,2,3,4,5,6,7,8,9,10]  //numbers that will be looped through
 let luckyNums = []   //blank array
 for (let i = 0; i < n; i++ ){  //loops through
-    let x = Math.floor(Math.random() * nums.length); //generates a random number between >0 & 10
+    let x = Math.floor(Math.random() * nums.length); //generates a random number between >0 & 10 //math.floor gives whole number integer
     luckyNums.push(nums[x])  //pushes the value into the blank luckyNums array
-    nums.splice(x, 1)   //gets rid of repeat
+    nums.splice(x, 1)   //gets rid of repeat by removing from nums at the index ()
 }
 return luckyNums  //returns the previously blank array LuckyNums that will now have values
 }
