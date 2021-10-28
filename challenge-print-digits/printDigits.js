@@ -30,9 +30,9 @@ printDigits(10)
 //     while(num){                                  //while condition is true, loop through code (while number is true)
 //         lastDigit = num % 10                     //digit = n % 10  //  Get right-most digit at current loop. Ex. 1/10 → 0.1 → 1
 //         console.log(lastDigit)                   //log out the last digit from previous line LastDigit  which is remainder 1
-//         num = (num- lastDigit) /10               //num assigned (0-1)/10 = -1/10 = -0.1 ==false
+//         num = (num- lastDigit) /10               //num assigned (0-1)/10 = -1/10 = -0.1 ==falsy by boolean logic so terminates loop
 //     }                                            
 // }                                                              
 // printDigits(1)                                
 
-                                                
+console.log(Boolean(-0.1) )                                             
