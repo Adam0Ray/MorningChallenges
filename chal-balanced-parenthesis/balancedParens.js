@@ -7,16 +7,16 @@ let sample4 = "Balanced."
 // Write your solution below:
 
 function balancedPar(str) {
-    let openPar = 0
-    let closingPar = 0
-    for (let i = 0; i < str.length; i++){
-        if ( str[i] === "(" ){
-            openPar +=1
-        } else if ( str[i] === ")" ) {
-            closingPar += 1
+    let openPar = 0                                        //set variable to 0 so we can count parenthesis
+    let closingPar = 0                                     //set variable to 0 so we can count parenthesis
+    for (let i = 0; i < str.length; i++){                  //for loop
+        if ( str[i] === "(" ){                             //search for open par
+            openPar +=1                                    //add one if found 1
+        } else if ( str[i] === ")" ) {                     //search for close par
+            closingPar += 1                                //add one if found 1
         }
     }
-    return openPar === closingPar
+    return openPar === closingPar                         //if the number of ( is equal to ) then return true, if not return false
 }
 console.log(balancedPar("()"))
 console.log(balancedPar("(Oh Noes!)("))
