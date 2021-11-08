@@ -1,7 +1,7 @@
 // Write your solution below:
 
 const tshirtSorter = (string) =>{
-return string.split("").sort().reverse().join("")  //sort elements in arraay in aplphabetical order
+return string.split("").sort().reverse().join("")  //sort elements in array in aplphabetical order, split string, then sort the splitted strings, reverse the order from lms to sml, join the string back together
 
 }
 
