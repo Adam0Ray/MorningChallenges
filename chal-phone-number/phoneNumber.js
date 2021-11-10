@@ -2,7 +2,7 @@ let createPhoneNumber = (nums) => {
 let number = "(xxx) xxx-xxxx";              //set format
 for (let i = 0; i < nums.length; i++){       //loop
     number = number.replace('x', nums[i]);    //use replace to target each x in the loop and replace witht he nums at the index
-}
+}                                             //Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.
 return number                              //return the result of the entire loop with the format of number
 }
 
